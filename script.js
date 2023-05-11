@@ -1,17 +1,19 @@
 // your code here
-
-let buttonEl=document.getElementByid("button");
+// let buttonEl=document.getElementById("button");
 
 
 function getInfo() {
-	let nameEl=document.getElementByid("name");
-   let numEl=document.getElementByid("year");
-	let hEl=document.getElementById("head");
-	alert(nameEL.value)
+	
+	let nameEl=document.getElementById("name");
+   let numEl=document.getElementById("year");
+	let hEl=document.getElementById("url");
+	var name=nameEl.value;
+	var year=numEl.value;
+	var updated= "https://localhost:8080/" + name + "and" + year ;  
 
-	// hEl+= nameEl.value + "and" + year.value ;
+	hEl.textContent=updated ;
 	
 	
 }
-buttonEl.addEventLister("click",getInfo);
+
 
